@@ -4,7 +4,7 @@ namespace ZnBundle\Geo\Domain\Repositories\Eloquent;
 
 use ZnCore\Base\Libs\I18Next\Mappers\I18nMapper;
 use ZnCore\Contract\Mapper\Interfaces\MapperInterface;
-use ZnLib\Db\Base\BaseEloquentCrudRepository;
+use ZnDatabase\Eloquent\Domain\Base\BaseEloquentCrudRepository;
 use ZnBundle\Geo\Domain\Entities\LocalityEntity;
 use ZnBundle\Geo\Domain\Interfaces\Repositories\LocalityRepositoryInterface;
 
