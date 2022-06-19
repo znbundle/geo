@@ -4,7 +4,6 @@ namespace ZnBundle\Geo\Domain\Entities;
 
 use Symfony\Component\Validator\Mapping\ClassMetadata;
 use ZnCore\Base\Libs\I18Next\Traits\I18nTrait;
-use ZnCore\Base\Libs\I18Next\Traits\LanguageTrait;
 use ZnCore\Contract\Domain\Interfaces\Entities\EntityIdInterface;
 use ZnCore\Domain\Interfaces\Entity\UniqueInterface;
 use ZnCore\Domain\Interfaces\Entity\ValidateEntityByMetadataInterface;
@@ -30,7 +29,7 @@ class CountryEntity implements ValidateEntityByMetadataInterface, UniqueInterfac
 
     }
 
-    public function unique() : array
+    public function unique(): array
     {
         return [];
     }
@@ -44,13 +43,6 @@ class CountryEntity implements ValidateEntityByMetadataInterface, UniqueInterfac
     {
         $this->id = $id;
     }
-
-
-
-
-
-
-
 
 
     public function setName($value): void
@@ -72,13 +64,6 @@ class CountryEntity implements ValidateEntityByMetadataInterface, UniqueInterfac
     {
         $this->_setI18nArray('name', $nameI18n);
     }
-
-
-
-
-
-
-
 
 
     /*public function getName()

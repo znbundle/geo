@@ -5,10 +5,9 @@ namespace ZnBundle\Geo\Domain\Entities;
 use Symfony\Component\Validator\Constraints as Assert;
 use Symfony\Component\Validator\Mapping\ClassMetadata;
 use ZnCore\Base\Libs\I18Next\Traits\I18nTrait;
-use ZnCore\Base\Libs\I18Next\Traits\LanguageTrait;
-use ZnCore\Domain\Interfaces\Entity\ValidateEntityByMetadataInterface;
-use ZnCore\Domain\Interfaces\Entity\UniqueInterface;
 use ZnCore\Contract\Domain\Interfaces\Entities\EntityIdInterface;
+use ZnCore\Domain\Interfaces\Entity\UniqueInterface;
+use ZnCore\Domain\Interfaces\Entity\ValidateEntityByMetadataInterface;
 
 class RegionEntity implements ValidateEntityByMetadataInterface, UniqueInterface, EntityIdInterface
 {
@@ -34,12 +33,12 @@ class RegionEntity implements ValidateEntityByMetadataInterface, UniqueInterface
         $metadata->addPropertyConstraint('name', new Assert\NotBlank);
     }
 
-    public function unique() : array
+    public function unique(): array
     {
         return [];
     }
 
-    public function setId($value) : void
+    public function setId($value): void
     {
         $this->id = $value;
     }
@@ -49,7 +48,7 @@ class RegionEntity implements ValidateEntityByMetadataInterface, UniqueInterface
         return $this->id;
     }
 
-    public function setCountryId($value) : void
+    public function setCountryId($value): void
     {
         $this->countryId = $value;
     }
