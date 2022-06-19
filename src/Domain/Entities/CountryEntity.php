@@ -3,6 +3,7 @@
 namespace ZnBundle\Geo\Domain\Entities;
 
 use Symfony\Component\Validator\Mapping\ClassMetadata;
+use ZnCore\Base\Libs\I18Next\Traits\I18nTrait;
 use ZnCore\Base\Libs\I18Next\Traits\LanguageTrait;
 use ZnCore\Contract\Domain\Interfaces\Entities\EntityIdInterface;
 use ZnCore\Domain\Interfaces\Entity\UniqueInterface;
@@ -11,7 +12,8 @@ use ZnCore\Domain\Interfaces\Entity\ValidateEntityByMetadataInterface;
 class CountryEntity implements ValidateEntityByMetadataInterface, UniqueInterface, EntityIdInterface
 {
 
-    use LanguageTrait;
+//    use LanguageTrait;
+    use I18nTrait;
 
     private $id = null;
 
@@ -43,7 +45,43 @@ class CountryEntity implements ValidateEntityByMetadataInterface, UniqueInterfac
         $this->id = $id;
     }
 
+
+
+
+
+
+
+
+
+    public function setName($value): void
+    {
+        $this->_setI18n('name', $value);
+    }
+
     public function getName()
+    {
+        return $this->_getI18n('name');
+    }
+
+    public function getNameI18n()
+    {
+        return $this->_getI18nArray('name');
+    }
+
+    public function setNameI18n($nameI18n): void
+    {
+        $this->_setI18nArray('name', $nameI18n);
+    }
+
+
+
+
+
+
+
+
+
+    /*public function getName()
     {
         return $this->i18n('name');
     }
@@ -61,7 +99,7 @@ class CountryEntity implements ValidateEntityByMetadataInterface, UniqueInterfac
     public function setNameI18n($nameI18n): void
     {
         $this->nameI18n = $nameI18n;
-    }
+    }*/
 
     public function getRegions()
     {
