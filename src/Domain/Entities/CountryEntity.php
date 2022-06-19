@@ -10,6 +10,7 @@ use ZnCore\Domain\Interfaces\Entity\ValidateEntityByMetadataInterface;
 
 class CountryEntity implements ValidateEntityByMetadataInterface, UniqueInterface, EntityIdInterface
 {
+
     use LanguageTrait;
 
     private $id = null;
