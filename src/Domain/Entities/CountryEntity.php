@@ -6,9 +6,9 @@ use Symfony\Component\Validator\Mapping\ClassMetadata;
 use ZnCore\Base\Libs\I18Next\Traits\I18nTrait;
 use ZnCore\Contract\Domain\Interfaces\Entities\EntityIdInterface;
 use ZnCore\Base\Libs\Entity\Interfaces\UniqueInterface;
-use ZnCore\Base\Libs\Entity\Interfaces\ValidateEntityByMetadataInterface;
+use ZnCore\Base\Libs\Validation\Interfaces\ValidationByMetadataInterface;
 
-class CountryEntity implements ValidateEntityByMetadataInterface, UniqueInterface, EntityIdInterface
+class CountryEntity implements ValidationByMetadataInterface, UniqueInterface, EntityIdInterface
 {
 
 //    use LanguageTrait;

@@ -6,7 +6,7 @@ use ZnBundle\Geo\Domain\Entities\RegionEntity;
 use ZnBundle\Geo\Domain\Interfaces\Services\RegionServiceInterface;
 use ZnBundle\Geo\Domain\Subscribers\AssignCountryIdSubscriber;
 use ZnCore\Domain\Base\BaseCrudService;
-use ZnCore\Domain\Interfaces\Libs\EntityManagerInterface;
+use ZnCore\Base\Libs\EntityManager\Interfaces\EntityManagerInterface;
 
 /**
  * @method
