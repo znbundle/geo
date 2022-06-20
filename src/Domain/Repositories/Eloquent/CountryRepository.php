@@ -8,7 +8,7 @@ use ZnBundle\Geo\Domain\Interfaces\Repositories\LocalityRepositoryInterface;
 use ZnBundle\Geo\Domain\Interfaces\Repositories\RegionRepositoryInterface;
 use ZnCore\Base\Libs\I18Next\Mappers\I18nMapper;
 use ZnCore\Contract\Mapper\Interfaces\MapperInterface;
-use ZnCore\Domain\Relations\relations\OneToManyRelation;
+use ZnCore\Base\Libs\Relation\Libs\Types\OneToManyRelation;
 use ZnDatabase\Eloquent\Domain\Base\BaseEloquentCrudRepository;
 
 class CountryRepository extends BaseEloquentCrudRepository implements CountryRepositoryInterface
