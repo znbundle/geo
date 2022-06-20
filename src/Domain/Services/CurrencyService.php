@@ -5,7 +5,7 @@ namespace ZnBundle\Geo\Domain\Services;
 use ZnBundle\Geo\Domain\Interfaces\Services\CurrencyServiceInterface;
 use ZnCore\Base\Libs\EntityManager\Interfaces\EntityManagerInterface;
 use ZnBundle\Geo\Domain\Interfaces\Repositories\CurrencyRepositoryInterface;
-use ZnCore\Domain\Base\BaseCrudService;
+use ZnCore\Base\Libs\Service\Base\BaseCrudService;
 use ZnBundle\Geo\Domain\Entities\CurrencyEntity;
 
 /**
