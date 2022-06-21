@@ -2,29 +2,28 @@
 
 namespace ZnBundle\Geo\Domain\Repositories\Eloquent;
 
-use ZnCore\Base\Libs\I18Next\Mappers\I18nMapper;
-use ZnCore\Contract\Mapper\Interfaces\MapperInterface;
-use ZnDatabase\Eloquent\Domain\Base\BaseEloquentCrudRepository;
 use ZnBundle\Geo\Domain\Entities\LocalityEntity;
 use ZnBundle\Geo\Domain\Interfaces\Repositories\LocalityRepositoryInterface;
+use ZnCore\Base\Libs\Repository\Mappers\JsonMapper;
+use ZnDatabase\Eloquent\Domain\Base\BaseEloquentCrudRepository;
 
 class LocalityRepository extends BaseEloquentCrudRepository implements LocalityRepositoryInterface
 {
 
-    public function tableName() : string
+    public function tableName(): string
     {
         return 'geo_locality';
     }
 
-    public function getEntityClass() : string
+    public function getEntityClass(): string
     {
         return LocalityEntity::class;
     }
 
-    public function mapper(): MapperInterface
+    public function mappers(): array
     {
-        return new I18nMapper($this->getEntityClass(), ['name_i18n']);
+        return [
+            new JsonMapper(['name_i18n']),
+        ];
     }
-
 }
-

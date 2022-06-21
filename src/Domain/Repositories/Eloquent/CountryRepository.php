@@ -6,20 +6,19 @@ use ZnBundle\Geo\Domain\Entities\CountryEntity;
 use ZnBundle\Geo\Domain\Interfaces\Repositories\CountryRepositoryInterface;
 use ZnBundle\Geo\Domain\Interfaces\Repositories\LocalityRepositoryInterface;
 use ZnBundle\Geo\Domain\Interfaces\Repositories\RegionRepositoryInterface;
-use ZnCore\Base\Libs\I18Next\Mappers\I18nMapper;
-use ZnCore\Contract\Mapper\Interfaces\MapperInterface;
 use ZnCore\Base\Libs\Relation\Libs\Types\OneToManyRelation;
+use ZnCore\Base\Libs\Repository\Mappers\JsonMapper;
 use ZnDatabase\Eloquent\Domain\Base\BaseEloquentCrudRepository;
 
 class CountryRepository extends BaseEloquentCrudRepository implements CountryRepositoryInterface
 {
 
-    public function tableName() : string
+    public function tableName(): string
     {
         return 'geo_country';
     }
 
-    public function getEntityClass() : string
+    public function getEntityClass(): string
     {
         return CountryEntity::class;
     }
@@ -44,10 +43,10 @@ class CountryRepository extends BaseEloquentCrudRepository implements CountryRep
         ];
     }
 
-    public function mapper(): MapperInterface
+    public function mappers(): array
     {
-        return new I18nMapper($this->getEntityClass(), ['name_i18n']);
+        return [
+            new JsonMapper(['name_i18n']),
+        ];
     }
-
 }
-
