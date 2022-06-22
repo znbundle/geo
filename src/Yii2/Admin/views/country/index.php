@@ -13,7 +13,7 @@ use yii\web\View;
 use ZnBundle\Reference\Yii2\Admin\Formatters\Actions\ItemListAction;
 use ZnCore\Base\Libs\I18Next\Facades\I18Next;
 use ZnCore\Base\Libs\Validation\Interfaces\ValidationByMetadataInterface;
-use ZnCore\Base\Libs\DataProvider\Libs\DataProvider;
+use ZnCore\Domain\DataProvider\Libs\DataProvider;
 use ZnLib\Web\Widgets\Collection\CollectionWidget;
 use ZnLib\Web\Widgets\Format\Formatters\ActionFormatter;
 

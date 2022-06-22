@@ -5,9 +5,9 @@ namespace ZnBundle\Geo\Domain\Subscribers;
 use ZnBundle\Geo\Domain\Interfaces\Services\CountryServiceInterface;
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 use ZnCore\Base\Libs\App\Helpers\EnvHelper;
-use ZnCore\Base\Libs\Domain\Enums\EventEnum;
-use ZnCore\Base\Libs\Domain\Events\EntityEvent;
-use ZnCore\Base\Libs\Domain\Events\QueryEvent;
+use ZnCore\Domain\Domain\Enums\EventEnum;
+use ZnCore\Domain\Domain\Events\EntityEvent;
+use ZnCore\Domain\Domain\Events\QueryEvent;
 
 class AssignCountryIdSubscriber implements EventSubscriberInterface
 {
