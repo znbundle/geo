@@ -3,10 +3,10 @@
 namespace ZnBundle\Geo\Domain\Entities;
 
 use Symfony\Component\Validator\Mapping\ClassMetadata;
-use ZnCore\Base\Libs\I18Next\Traits\I18nTrait;
+use ZnCore\Base\I18Next\Traits\I18nTrait;
 use ZnCore\Domain\Entity\Interfaces\EntityIdInterface;
 use ZnCore\Domain\Entity\Interfaces\UniqueInterface;
-use ZnCore\Base\Libs\Validation\Interfaces\ValidationByMetadataInterface;
+use ZnCore\Base\Validation\Interfaces\ValidationByMetadataInterface;
 
 class CountryEntity implements ValidationByMetadataInterface, UniqueInterface, EntityIdInterface
 {

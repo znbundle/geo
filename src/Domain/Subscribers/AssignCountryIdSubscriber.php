@@ -4,7 +4,7 @@ namespace ZnBundle\Geo\Domain\Subscribers;
 
 use ZnBundle\Geo\Domain\Interfaces\Services\CountryServiceInterface;
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
-use ZnCore\Base\Libs\App\Helpers\EnvHelper;
+use ZnCore\Base\App\Helpers\EnvHelper;
 use ZnCore\Domain\Domain\Enums\EventEnum;
 use ZnCore\Domain\Domain\Events\EntityEvent;
 use ZnCore\Domain\Domain\Events\QueryEvent;

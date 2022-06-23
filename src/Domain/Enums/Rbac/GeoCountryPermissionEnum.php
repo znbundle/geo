@@ -2,7 +2,7 @@
 
 namespace ZnBundle\Geo\Domain\Enums\Rbac;
 
-use ZnCore\Base\Libs\Enum\Interfaces\GetLabelsInterface;
+use ZnCore\Base\Enum\Interfaces\GetLabelsInterface;
 
 class GeoCountryPermissionEnum implements GetLabelsInterface
 {
