@@ -24,7 +24,7 @@ class RegionRepository extends BaseEloquentCrudRepository implements RegionRepos
         return RegionEntity::class;
     }
 
-    public function relations2()
+    public function relations()
     {
         return [
             [

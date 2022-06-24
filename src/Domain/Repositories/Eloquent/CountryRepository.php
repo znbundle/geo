@@ -23,7 +23,7 @@ class CountryRepository extends BaseEloquentCrudRepository implements CountryRep
         return CountryEntity::class;
     }
 
-    public function relations2()
+    public function relations()
     {
         return [
             [
