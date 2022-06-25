@@ -4,7 +4,7 @@ namespace ZnBundle\Geo\Domain\Entities;
 
 use Symfony\Component\Validator\Constraints as Assert;
 use Symfony\Component\Validator\Mapping\ClassMetadata;
-use ZnCore\Base\I18Next\Traits\I18nTrait;
+use ZnCore\Base\I18n\Traits\I18nTrait;
 use ZnCore\Domain\Entity\Interfaces\EntityIdInterface;
 use ZnCore\Domain\Entity\Interfaces\UniqueInterface;
 use ZnCore\Base\Validation\Interfaces\ValidationByMetadataInterface;
