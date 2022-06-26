@@ -8,7 +8,7 @@ use ZnBundle\Geo\Yii2\Admin\Forms\RegionForm;
 use ZnBundle\Geo\Yii2\Admin\Module;
 use yii\helpers\Url;
 use ZnLib\Components\I18Next\Facades\I18Next;
-use ZnLib\Web\Widgets\BreadcrumbWidget;
+use ZnLib\Web\Components\Widget\Widgets\BreadcrumbWidget;
 use ZnYii\Web\Controllers\BaseController;
 
 class RegionController  extends BaseController

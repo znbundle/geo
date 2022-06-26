@@ -14,8 +14,8 @@ use ZnBundle\Reference\Yii2\Admin\Formatters\Actions\ItemListAction;
 use ZnLib\Components\I18Next\Facades\I18Next;
 use ZnCore\Base\Validation\Interfaces\ValidationByMetadataInterface;
 use ZnCore\Domain\DataProvider\Libs\DataProvider;
-use ZnLib\Web\Widgets\Collection\CollectionWidget;
-use ZnLib\Web\Widgets\Format\Formatters\ActionFormatter;
+use ZnLib\Web\Components\Widget\Widgets\Collection\CollectionWidget;
+use ZnLib\Web\Components\Widget\Widgets\Format\Formatters\ActionFormatter;
 
 $this->title = I18Next::t('geo', 'country.title');
 
