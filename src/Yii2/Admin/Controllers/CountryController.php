@@ -9,7 +9,7 @@ use ZnBundle\Geo\Yii2\Admin\Forms\CountryForm;
 use ZnBundle\Geo\Yii2\Admin\Module;
 use yii\helpers\Url;
 use ZnLib\Components\I18Next\Facades\I18Next;
-use ZnLib\Web\Components\TwBootstrap\Widgets\Breadcrumb\BreadcrumbWidget;
+use ZnLib\Web\TwBootstrap\Widgets\Breadcrumb\BreadcrumbWidget;
 use ZnYii\Web\Controllers\BaseController;
 
 class CountryController  extends BaseController
