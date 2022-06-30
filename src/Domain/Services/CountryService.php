@@ -29,7 +29,7 @@ class CountryService extends BaseCrudService implements CountryServiceInterface
     public function getCurrentCountry(): CountryEntity
     {
         if(!isset($this->currentCountry)) {
-            $this->currentCountry = $this->oneById($_ENV['COUNTRY_ID']);
+            $this->currentCountry = $this->findOneById($_ENV['COUNTRY_ID']);
         }
         return $this->currentCountry;
     }
