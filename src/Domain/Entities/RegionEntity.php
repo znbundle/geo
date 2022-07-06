@@ -5,9 +5,9 @@ namespace ZnBundle\Geo\Domain\Entities;
 use Symfony\Component\Validator\Constraints as Assert;
 use Symfony\Component\Validator\Mapping\ClassMetadata;
 use ZnLib\Components\I18n\Traits\I18nTrait;
-use ZnCore\Domain\Entity\Interfaces\EntityIdInterface;
-use ZnCore\Domain\Entity\Interfaces\UniqueInterface;
-use ZnCore\Base\Validation\Interfaces\ValidationByMetadataInterface;
+use ZnCore\Entity\Interfaces\EntityIdInterface;
+use ZnCore\Entity\Interfaces\UniqueInterface;
+use ZnCore\Validation\Interfaces\ValidationByMetadataInterface;
 
 class RegionEntity implements ValidationByMetadataInterface, UniqueInterface, EntityIdInterface
 {
