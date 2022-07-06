@@ -34,7 +34,7 @@ class LocalityService extends BaseCrudService implements LocalityServiceInterfac
         ];
     }
 
-    protected function forgeQuery(Query $query = null)
+    protected function forgeQuery(Query $query = null): Query
     {
         $parentQuery = parent::forgeQuery($query);
         /*if ($regionId = Yii::$app->request->get('region_id')) {
