@@ -5,7 +5,7 @@ namespace ZnBundle\Geo\Domain\Services;
 use ZnBundle\Geo\Domain\Entities\RegionEntity;
 use ZnBundle\Geo\Domain\Interfaces\Services\RegionServiceInterface;
 use ZnBundle\Geo\Domain\Subscribers\AssignCountryIdSubscriber;
-use ZnCore\Domain\Service\Base\BaseCrudService;
+use ZnCore\Service\Base\BaseCrudService;
 use ZnCore\EntityManager\Interfaces\EntityManagerInterface;
 
 /**

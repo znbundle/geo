@@ -4,9 +4,9 @@ namespace ZnBundle\Geo\Domain\Services;
 
 use ZnBundle\Geo\Domain\Entities\CountryEntity;
 use ZnBundle\Geo\Domain\Interfaces\Services\CountryServiceInterface;
-use ZnCore\Domain\Service\Base\BaseCrudService;
+use ZnCore\Service\Base\BaseCrudService;
 use ZnCore\EntityManager\Interfaces\EntityManagerInterface;
-use ZnCore\Domain\Query\Entities\Query;
+use ZnCore\Query\Entities\Query;
 
 /**
  * @method

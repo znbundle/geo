@@ -6,9 +6,9 @@ use ZnBundle\Geo\Domain\Entities\RegionEntity;
 use ZnBundle\Geo\Domain\Interfaces\Repositories\CountryRepositoryInterface;
 use ZnBundle\Geo\Domain\Interfaces\Repositories\LocalityRepositoryInterface;
 use ZnBundle\Geo\Domain\Interfaces\Repositories\RegionRepositoryInterface;
-use ZnCore\Domain\Relation\Libs\Types\OneToManyRelation;
-use ZnCore\Domain\Relation\Libs\Types\OneToOneRelation;
-use ZnCore\Domain\Repository\Mappers\JsonMapper;
+use ZnCore\Relation\Libs\Types\OneToManyRelation;
+use ZnCore\Relation\Libs\Types\OneToOneRelation;
+use ZnCore\Repository\Mappers\JsonMapper;
 use ZnDatabase\Eloquent\Domain\Base\BaseEloquentCrudRepository;
 
 class RegionRepository extends BaseEloquentCrudRepository implements RegionRepositoryInterface
