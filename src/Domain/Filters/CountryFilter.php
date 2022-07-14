@@ -3,7 +3,7 @@
 namespace ZnBundle\Geo\Domain\Filters;
 
 use Symfony\Component\Validator\Mapping\ClassMetadata;
-use ZnCore\QueryFilter\Interfaces\DefaultSortInterface;
+use ZnDomain\QueryFilter\Interfaces\DefaultSortInterface;
 
 class CountryFilter implements DefaultSortInterface
 {

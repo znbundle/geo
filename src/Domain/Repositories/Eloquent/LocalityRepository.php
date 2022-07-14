@@ -4,7 +4,7 @@ namespace ZnBundle\Geo\Domain\Repositories\Eloquent;
 
 use ZnBundle\Geo\Domain\Entities\LocalityEntity;
 use ZnBundle\Geo\Domain\Interfaces\Repositories\LocalityRepositoryInterface;
-use ZnCore\Repository\Mappers\JsonMapper;
+use ZnDomain\Repository\Mappers\JsonMapper;
 use ZnDatabase\Eloquent\Domain\Base\BaseEloquentCrudRepository;
 
 class LocalityRepository extends BaseEloquentCrudRepository implements LocalityRepositoryInterface

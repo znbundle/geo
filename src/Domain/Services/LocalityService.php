@@ -6,8 +6,8 @@ use ZnBundle\Geo\Domain\Entities\LocalityEntity;
 use ZnBundle\Geo\Domain\Interfaces\Services\LocalityServiceInterface;
 use ZnBundle\Geo\Domain\Subscribers\AssignCountryIdSubscriber;
 use Yii;
-use ZnCore\Service\Base\BaseCrudService;
-use ZnCore\EntityManager\Interfaces\EntityManagerInterface;
+use ZnDomain\Service\Base\BaseCrudService;
+use ZnDomain\EntityManager\Interfaces\EntityManagerInterface;
 use ZnCore\Query\Entities\Query;
 
 /**

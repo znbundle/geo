@@ -2,7 +2,7 @@
 
 namespace ZnBundle\Geo\Domain\Interfaces\Services;
 
-use ZnCore\Service\Interfaces\CrudServiceInterface;
+use ZnDomain\Service\Interfaces\CrudServiceInterface;
 
 interface RegionServiceInterface extends CrudServiceInterface
 {
