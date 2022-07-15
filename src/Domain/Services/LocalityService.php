@@ -8,7 +8,7 @@ use ZnBundle\Geo\Domain\Subscribers\AssignCountryIdSubscriber;
 use Yii;
 use ZnDomain\Service\Base\BaseCrudService;
 use ZnDomain\EntityManager\Interfaces\EntityManagerInterface;
-use ZnCore\Query\Entities\Query;
+use ZnDomain\Query\Entities\Query;
 
 /**
  * @method

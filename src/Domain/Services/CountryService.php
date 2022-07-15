@@ -6,7 +6,7 @@ use ZnBundle\Geo\Domain\Entities\CountryEntity;
 use ZnBundle\Geo\Domain\Interfaces\Services\CountryServiceInterface;
 use ZnDomain\Service\Base\BaseCrudService;
 use ZnDomain\EntityManager\Interfaces\EntityManagerInterface;
-use ZnCore\Query\Entities\Query;
+use ZnDomain\Query\Entities\Query;
 
 /**
  * @method
